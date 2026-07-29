@@ -6,6 +6,7 @@ import Home from './pages/home'
 import Why from './pages/why'
 import * as serviceWorker from './serviceWorker'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { SpeedInsights } from '@vercel/speed-insights/dist/react/index.js'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.render(
       <Route path="/token-list" component={List} />
       <Route path="/why" component={Why} />
     </Router>
+    <SpeedInsights />
   </React.StrictMode>,
   document.getElementById('root')
 )
